@@ -1,21 +1,22 @@
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
-  padding: 0; /* إزالة padding الكبير الذي كان يرفع البطاقة */
+  padding: 0;
   background: url('0c34.jpg') no-repeat center center fixed;
-  background-size: cover;
+ 
   box-sizing: border-box;
   text-align: center;
-  height: 100vh;           /* كامل ارتفاع الشاشة */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* يضع كل المحتوى عموديًا في المنتصف */
-  align-items: center;     /* يضع كل المحتوى أفقيًا في المنتصف */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
 h1 {
   color: #000000;
-  margin: 0px auto 30px auto; 
+  margin: 0px auto 20px auto;
   font-size: 24px;
   font-weight: bold;
   width: 80%;
@@ -109,13 +110,19 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
+  body {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  
   h1 {
-    font-size: 20px;
-    width: 95%;
+    font-size: 18px;
+    width: 98%;
+    margin-bottom: 155px;
   }
 
   h1::after {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .card {
