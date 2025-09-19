@@ -3,9 +3,14 @@ body {
   margin: 0;
   padding: 100px 0 40px 0; 
   background: url('0c34.jpg') no-repeat center center fixed;
-  
+  background-size: cover; /* مهم لتغطية كامل الشاشة */
   box-sizing: border-box;
   text-align: center; /* يخلي النص بالنص */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* على اللاب توب يبقى أعلى */
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -41,7 +46,7 @@ h1::after {
   align-items: center;
   text-align: center;
   animation: fadeIn 0.5s;
-  margin: 0 auto; /* يخلي الكارد بالنص */
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -104,23 +109,13 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
-
   body {
-    margin: 0;
     padding: 0;
-    height: 100vh; /* لازم نحدد ارتفاع كامل للشاشة */
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card {
-    position: relative; /* ممكن يكون relative أو leave default */
-    width: 95%;
-    max-width: 650px;
-    padding: 20px;
-    margin: 0 auto;
-    /* flexbox سيجعل المحتوى داخل الكارد بالنص تلقائي */
+    flex-direction: column;
+    justify-content: center; /* يجعل كل المحتوى في منتصف الشاشة عموديًا */
+    align-items: center;     /* يجعل كل المحتوى في المنتصف أفقيًا */
   }
 
   h1 {
@@ -130,6 +125,13 @@ h2 {
 
   h1::after {
     font-size: 18px;
+  }
+
+  .card {
+    width: 95%;
+    max-width: 650px;
+    padding: 20px;
+    margin: 0; /* يضمن البطاقة بالمنتصف */
   }
 
   h2 {
