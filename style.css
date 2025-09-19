@@ -2,7 +2,7 @@ body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
-  background: url('0c34.jpg') no-repeat center center fixed;
+  background: url('88.jpg') no-repeat center center fixed;
   box-sizing: border-box;
   text-align: center;
   min-height: 100vh;
@@ -110,18 +110,21 @@ h2 {
 /* تحسين الجوال */
 /* تحسين الجوال */
 /* تحسين الجوال */
+/* تحسين الجوال */
 @media (max-width: 700px) {
   body {
     justify-content: flex-start;
-    padding-top: 30px;
+    padding-top: 0;
     background-attachment: scroll;
-    min-height: 120vh; /* زيادة ارتفاع الصفحة */
+    min-height: 100vh;
+    display: block;
   }
   
   h1 {
     font-size: 20px;
     width: 95%;
-    margin: 80px auto 30px auto; /* زيادة الهامش العلوي */
+    margin: 120px auto 30px auto;
+    padding-top: 20px;
   }
 
   h1::after {
@@ -132,7 +135,7 @@ h2 {
   .card {
     width: 92%;
     padding: 25px;
-    margin: 60px auto 30px auto; /* زيادة الهامش العلوي */
+    margin: 0 auto 40px auto;
   }
 
   h2 {
@@ -151,14 +154,9 @@ h2 {
 
 /* تحسين إضافي للشاشات الصغيرة جداً */
 @media (max-width: 400px) {
-  body {
-    padding-top: 20px;
-    min-height: 110vh;
-  }
-  
   h1 {
     font-size: 18px;
-    margin: 60px auto 25px auto;
+    margin: 100px auto 25px auto;
   }
   
   h1::after {
@@ -168,7 +166,6 @@ h2 {
   .card {
     padding: 20px;
     width: 95%;
-    margin: 40px auto 20px auto;
   }
   
   .options button {
