@@ -104,40 +104,44 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
-  
-  body {
-    padding: 0 0 0 0; /* يقلل المسافة فوق وتحت */
 
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* لازم نحدد ارتفاع كامل للشاشة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    position: relative; /* ممكن يكون relative أو leave default */
+    width: 95%;
+    max-width: 650px;
+    padding: 20px;
+    margin: 0 auto;
+    /* flexbox سيجعل المحتوى داخل الكارد بالنص تلقائي */
+  }
 
   h1 {
     font-size: 20px;
     width: 95%;
   }
+
   h1::after {
     font-size: 18px;
   }
-  .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-  }
   h2 {
     font-size: 20px;
   }
+
   .options button {
     font-size: 14px;
     padding: 10px;
   }
+
   .result {
     font-size: 18px;
   }
+}
