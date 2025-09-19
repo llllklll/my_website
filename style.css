@@ -104,9 +104,18 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
+  
   body {
-    padding: 30px 0 20px 0; /* يقلل المسافة فوق وتحت */
+    padding: 0 0 0 0; /* يقلل المسافة فوق وتحت */
+
   }
+  .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
   h1 {
     font-size: 20px;
     width: 95%;
