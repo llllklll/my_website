@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 100px 0 40px 0; 
   background: url('0c34.jpg') no-repeat center center fixed;
-  background-size: cover;
+  
   box-sizing: border-box;
   text-align: center; /* يخلي النص بالنص */
 }
