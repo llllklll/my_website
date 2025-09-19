@@ -1,16 +1,22 @@
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
-  padding: 100px 0 40px 0; 
+  padding: 0;
   background: url('0c34.jpg') no-repeat center center fixed;
-  background-size: cover; /* مهم لتغطية كامل الشاشة */
+  background-size: cover;
   box-sizing: border-box;
-  text-align: center; /* يخلي النص بالنص */
+  text-align: center;
+}
+
+/* حاوية كل المحتوى */
+.container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* على اللاب توب يبقى أعلى */
   align-items: center;
   min-height: 100vh;
+  padding: 100px 0 40px 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -20,11 +26,9 @@ h1 {
   font-weight: bold;
   width: 80%;
   max-width: 650px;
-  box-sizing: border-box;
   line-height: 1.4;
 }
 
-/* الكلام كامل في العنوان */
 h1::after {
   content: "اعرف أي من قيمنا تبرز فيك أكثر بين : بكرمنا، بطموحنا، بفزعتنا، بجودنا،بأصالتنا";
   display: block;
@@ -47,7 +51,6 @@ h1::after {
   text-align: center;
   animation: fadeIn 0.5s;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .card.active {
@@ -109,13 +112,10 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
-  body {
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* يجعل كل المحتوى في منتصف الشاشة عموديًا */
-    align-items: center;     /* يجعل كل المحتوى في المنتصف أفقيًا */
+  .container {
+    height: 100vh; /* كامل ارتفاع الشاشة */
+    justify-content: center; /* كل المحتوى في المنتصف عموديًا */
+    padding: 0; /* لا padding فوق أو تحت */
   }
 
   h1 {
@@ -131,7 +131,6 @@ h2 {
     width: 95%;
     max-width: 650px;
     padding: 20px;
-    margin: 0; /* يضمن البطاقة بالمنتصف */
   }
 
   h2 {
