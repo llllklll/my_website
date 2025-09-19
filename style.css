@@ -111,20 +111,22 @@ h2 {
 /* تحسين الجوال */
 /* تحسين الجوال */
 /* تحسين الجوال */
+/* تحسين الجوال */
 @media (max-width: 700px) {
   body {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     padding-top: 0;
-    background-attachment: scroll;
     min-height: 100vh;
-    display: block;
+    background-position: center top;
   }
   
   h1 {
     font-size: 20px;
     width: 95%;
-    margin: 120px auto 30px auto;
-    padding-top: 20px;
+    margin: 40px auto 20px auto;
+    order: 1;
   }
 
   h1::after {
@@ -135,7 +137,8 @@ h2 {
   .card {
     width: 92%;
     padding: 25px;
-    margin: 0 auto 40px auto;
+    margin: 20px auto;
+    order: 2;
   }
 
   h2 {
@@ -156,7 +159,7 @@ h2 {
 @media (max-width: 400px) {
   h1 {
     font-size: 18px;
-    margin: 100px auto 25px auto;
+    margin: 30px auto 15px auto;
   }
   
   h1::after {
@@ -166,6 +169,7 @@ h2 {
   .card {
     padding: 20px;
     width: 95%;
+    margin: 15px auto;
   }
   
   .options button {
