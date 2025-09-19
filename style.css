@@ -109,17 +109,22 @@ h2 {
 
 /* تحسين الجوال */
 /* تحسين الجوال */
+/* تحسين الجوال */
 @media (max-width: 700px) {
   body {
     justify-content: flex-start;
     padding-top: 30px;
     background-attachment: scroll;
+    /* دفع المحتوى كله لأسفل */
+    transform: translateY(20%);
   }
   
   h1 {
     font-size: 20px;
     width: 95%;
     margin-bottom: 30px;
+    /* زيادة المسافة بين العنوان والبطاقة */
+    margin-top: 40px;
   }
 
   h1::after {
@@ -130,7 +135,10 @@ h2 {
   .card {
     width: 92%;
     padding: 25px;
-    margin: 0 auto 30px auto;
+    margin: 40px auto 30px auto; /* زيادة الهامش العلوي */
+    /* دفع البطاقة لأسفل أكثر */
+    position: relative;
+    top: 50px;
   }
 
   h2 {
@@ -151,11 +159,13 @@ h2 {
 @media (max-width: 400px) {
   body {
     padding-top: 25px;
+    transform: translateY(15%);
   }
   
   h1 {
     font-size: 18px;
     margin-bottom: 25px;
+    margin-top: 30px;
   }
   
   h1::after {
@@ -165,6 +175,8 @@ h2 {
   .card {
     padding: 20px;
     width: 95%;
+    top: 40px;
+    margin: 30px auto 20px auto;
   }
   
   .options button {
