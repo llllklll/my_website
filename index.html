@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>اختبار عزنا -اليوم الوطني </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- الأسئلة -->
+
+<h1>رحـلـة فـي عـزنـا </h1>
+
+<div class="card active" id="q1">
+  <div class="progress">السؤال 1 من 15</div>
+  <h2>س1: لو كنت تقود فريق عمل، ما هو أول قرار تتخذه إذا واجهتكم أزمة؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('فزعتنا',1)">أجمع الفريق وأتأكد أن الجميع بخير</button>
+    <button type="button" onclick="answer('رؤيتنا',1)">أبحث عن حل مبتكر وخطة بديلة</button>
+    <button type="button" onclick="answer('طموحنا',1)">أحمّسهم برؤية جديدة ونرفع الهدف</button>
+    <button type="button" onclick="answer('أصالتنا',1)">أطبّق حكمة من ماضينا وتجارب أجدادنا</button>
+    <button type="button" onclick="answer('جودنا',1)">أوزع المهام بعدل ليشارك الجميع</button>
+    <button type="button" onclick="answer('كرمنا',1)">أقدم الدعم المعنوي والمادي</button>
+  </div>
+</div>
+
+<div class="card" id="q2">
+  <div class="progress">السؤال 2 من 15</div>
+  <h2>س2: أعظم وسيلة نقدر نعرّف العالم بالسعودية من خلالها هي:</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',2)">الضيافة والكرم السعودي</button>
+    <button type="button" onclick="answer('طموحنا',2)">إنجازات شبابها وشاباتها</button>
+    <button type="button" onclick="answer('فزعتنا',2)">تكاتف المجتمع وقت الأزمات</button>
+    <button type="button" onclick="answer('أصالتنا',2)">التراث والفنون الشعبية</button>
+    <button type="button" onclick="answer('جودنا',2)">المبادرات الإنسانية</button>
+    <button type="button" onclick="answer('رؤيتنا',2)">رؤية 2030 ومشاريعها</button>
+  </div>
+</div>
+
+<div class="card" id="q3">
+  <div class="progress">السؤال 3 من 15</div>
+  <h2>س3: عندما تسمع كلمة “العز”، ما الذي يخطر في بالك أولًا؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',3)">عزنا في كرمنا</button>
+    <button type="button" onclick="answer('طموحنا',3)">عزنا في طموح شبابنا</button>
+    <button type="button" onclick="answer('فزعتنا',3)">عزنا في وقفة بعضنا لبعض</button>
+    <button type="button" onclick="answer('أصالتنا',3)">عزنا في جذورنا وتاريخنا</button>
+    <button type="button" onclick="answer('جودنا',3)">عزنا في عطائنا وجودنا</button>
+    <button type="button" onclick="answer('رؤيتنا',3)">عزنا في خططنا ورؤيتنا</button>
+  </div>
+</div>
+
+<div class="card" id="q4">
+  <div class="progress">السؤال 4 من 15</div>
+  <h2>س4: تخيّل أنك تمثل بلدك في محفل عالمي، ما الشيء الذي تحرص أن تعرضه أولًا؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',4)">مأدبة سعودية عامرة</button>
+    <button type="button" onclick="answer('طموحنا',4)">ابتكار طبي/تقني</button>
+    <button type="button" onclick="answer('فزعتنا',4)">تكاتف المجتمع السعودي</button>
+    <button type="button" onclick="answer('أصالتنا',4)">لوحة من التراث والأدب</button>
+    <button type="button" onclick="answer('جودنا',4)">مبادرة خيرية تخدم الإنسانية</button>
+    <button type="button" onclick="answer('جودنا',4)">مشروع من مشاريع الرؤية</button>
+  </div>
+</div>
+
+<div class="card" id="q5">
+  <div class="progress">السؤال 5 من 15</div>
+  <h2>س5: لو كان عندك فرصة تترك بصمة في اليوم الوطني، كيف ستكون؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',5)">استضافة وكرم ضيافة للناس</button>
+    <button type="button" onclick="answer('طموحنا',5)">إطلاق مبادرة شبابية ملهمة</button>
+    <button type="button" onclick="answer('فزعتنا',5)">حملة تطوعية جماعية</button>
+    <button type="button" onclick="answer('أصالتنا',5)">إحياء فعالية تراثية</button>
+    <button type="button" onclick="answer('جودنا',5)">حملة تبرعات لمحتاجين</button>
+    <button type="button" onclick="answer('رؤيتنا',5)">فكرة تواكب رؤية 2030</button>
+  </div>
+</div>
+
+<div class="card" id="q6">
+  <div class="progress">السؤال 6 من 15</div>
+  <h2>س6: برأيك، ما هي أكبر قوة تميز الشعب السعودي؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',6)">الكرم الذي يضرب فيه المثل</button>
+    <button type="button" onclick="answer('طموحنا',6)">الطموح اللامحدود</button>
+    <button type="button" onclick="answer('فزعتنا',6)">التكاتف في المواقف الصعبة</button>
+    <button type="button" onclick="answer('أصالتنا',6)">الأصالة المتجذرة عبر الأجيال</button>
+    <button type="button" onclick="answer('جودنا',6)">العطاء بلا حدود</button>
+    <button type="button" onclick="answer('رؤيتنا',6)">الرؤية الواضحة للمستقبل</button>
+  </div>
+</div>
+
+<div class="card" id="q7">
+  <div class="progress">السؤال 7 من 15</div>
+  <h2>س7: لو كنت مع مجموعة من الأصدقاء واحتجتم قرارًا سريعًا، ما هو الأسلوب الذي تتبعه؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',7)">أتكفل وأكرمهم بالذي يحتاجونه</button>
+    <button type="button" onclick="answer('طموحنا',7)">أحمّسهم ونحدد هدفًا أعلى</button>
+    <button type="button" onclick="answer('فزعتنا',7)">أقترح أن نتعاون ونحلها معًا</button>
+    <button type="button" onclick="answer('أصالتنا',7)">أذكّرهم بعادات الأجداد في مثل هذه المواقف</button>
+    <button type="button" onclick="answer('جودنا',7)">أقول كل واحد يساهم بما عنده</button>
+    <button type="button" onclick="answer('رؤيتنا',7)">أرسم خطة قصيرة المدى ونسير عليها</button>
+  </div>
+</div>
+
+<div class="card" id="q8">
+  <div class="progress">السؤال 8 من 15</div>
+  <h2>س8: أكثر موقف يفرحك أن تراه في وطنك؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',8)">إفطار جماعي وضيافة للكل</button>
+    <button type="button" onclick="answer('طموحنا',8)">إنجاز عالمي باسم السعودية</button>
+    <button type="button" onclick="answer('فزعتنا',8)">شباب يساعدون بعض وقت حادث</button>
+    <button type="button" onclick="answer('أصالتنا',8)">مهرجان الثقافة والتراث</button>
+    <button type="button" onclick="answer('جودنا',8)">مبادرة خيرية ضخمة</button>
+    <button type="button" onclick="answer('رؤيتنا',8)">إطلاق مشروع ضخم ضمن الرؤية</button>
+  </div>
+</div>
+
+<div class="card" id="q9">
+  <div class="progress">السؤال 9 من 15</div>
+  <h2>س9: لو وصفت السعودية بكلمة واحدة، ماذا تقول؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',9)">كرم</button>
+    <button type="button" onclick="answer('طموحنا',9)">طموح</button>
+    <button type="button" onclick="answer('فزعتنا',9)">فزعة</button>
+    <button type="button" onclick="answer('أصالتنا',9)">أصالة</button>
+    <button type="button" onclick="answer('جودنا',9)">جود</button>
+    <button type="button" onclick="answer('رؤيتنا',9)">رؤية</button>
+  </div>
+</div>
+
+<div class="card" id="q10">
+  <div class="progress">السؤال 10 من 15</div>
+  <h2>س10: إذا كنت تكتب قصيدة وطنية، ما الموضوع الذي يهيمن على محتواها؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',10)">مدح الكرم والضيافة</button>
+    <button type="button" onclick="answer('طموحنا',10)">تمجيد الطموحات والإنجازات</button>
+    <button type="button" onclick="answer('فزعتنا',10)">تصوير الفزعة والتكاتف</button>
+    <button type="button" onclick="answer('أصالتنا',10)">إحياء التراث والأجداد</button>
+    <button type="button" onclick="answer('جودنا',10)">ذكر الجود والعطاء</button>
+    <button type="button" onclick="answer('رؤيتنا',10)">استشراف المستقبل والرؤية</button>
+  </div>
+</div>
+
+<div class="card" id="q11">
+  <div class="progress">السؤال 11 من 15</div>
+  <h2>س11: إذا احتاج أحد مساعدة مالية أو معنوية، كيف تكون ردة فعلك؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',11)">أبادر وأكرمه بما أقدر</button>
+    <button type="button" onclick="answer('طموحنا',11)">أساعده ليحقق طموحه</button>
+    <button type="button" onclick="answer('فزعتنا',11)">أجمع ناس يفزعون له</button>
+    <button type="button" onclick="answer('أصالتنا',11)">أذكّره بقوة أصله وجذوره</button>
+    <button type="button" onclick="answer('جودنا',11)">أشارك بما عندي بلا تردد</button>
+    <button type="button" onclick="answer('رؤيتنا',11)">أبحث له عن فرصة مستدامة ضمن الرؤية</button>
+  </div>
+</div>
+
+<div class="card" id="q12">
+  <div class="progress">السؤال 12 من 15</div>
+  <h2>س12: أي مشروع من هذه يجذبك أكثر؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',12)">مطعم يقدم الأكلات السعودية للزوار</button>
+    <button type="button" onclick="answer('طموحنا',12)">مختبر ابتكار للشباب</button>
+    <button type="button" onclick="answer('فزعتنا',12)">مركز تطوع واستجابة للطوارئ</button>
+    <button type="button" onclick="answer('أصالتنا',12)">متحف يحفظ التراث</button>
+    <button type="button" onclick="answer('جودنا',12)">جمعية خيرية جديدة</button>
+    <button type="button" onclick="answer('رؤيتنا',12)">مدينة ذكية متكاملة</button>
+  </div>
+</div>
+
+<div class="card" id="q13">
+  <div class="progress">السؤال 13 من 15</div>
+  <h2>س13: عندما ترى علم المملكة مرفوعًا، ما الشعور الأقوى الذي ينتابك؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',13)">عزة الكرم والشرف</button>
+    <button type="button" onclick="answer('طموحنا',13)">حلم كبير نحو القمة</button>
+    <button type="button" onclick="answer('فزعتنا',13)">قوة التكاتف والوحدة</button>
+    <button type="button" onclick="answer('أصالتنا',13)">فخر بجذورنا وأجدادنا</button>
+    <button type="button" onclick="answer('جودنا',13)">حب العطاء بلا حدود</button>
+    <button type="button" onclick="answer('رؤيتنا',13)">أمل بمستقبل مشرق</button>
+  </div>
+</div>
+
+<div class="card" id="q14">
+  <div class="progress">السؤال 14 من 15</div>
+  <h2>س14: إذا كنت مسؤولًا عن فعالية وطنية، ما موضوعها الذي تختاره؟</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',14)">مجلس ضيافة سعودي</button>
+    <button type="button" onclick="answer('طموحنا',14)">ملتقى الابتكار للشباب</button>
+    <button type="button" onclick="answer('فزعتنا',14)">حملة وطنية للفزعة المجتمعية</button>
+    <button type="button" onclick="answer('أصالتنا',14)">مهرجان الثقافة والتراث</button>
+    <button type="button" onclick="answer('جودنا',14)">ماراثون خيري</button>
+    <button type="button" onclick="answer('رؤيتنا',14)">معرض مشاريع رؤية 2030</button>
+  </div>
+</div>
+
+<div class="card" id="q15">
+  <div class="progress">السؤال 15 من 15</div>
+  <h2>س15: برأيك، سر استمرار عزّنا جيلًا بعد جيل هو:</h2>
+  <div class="options">
+    <button type="button" onclick="answer('كرمنا',15)">الكرم الذي لا ينقطع</button>
+    <button type="button" onclick="answer('طموحنا',15)">الطموح الذي لا يعرف حدودًا</button>
+    <button type="button" onclick="answer('فزعتنا',15)">الفزعة في الشدايد</button>
+    <button type="button" onclick="answer('فزعتنا',15)">الأصالة التي نتمسك بها</button>
+    <button type="button" onclick="answer('جودنا',15)">الجود والعطاء المستمر</button>
+    <button type="button" onclick="answer('رؤيتنا',15)">الرؤية التي تحدد الطريق</button>
+  </div>
+</div>
+
+
+
+
+<!-- النتيجة -->
+<div class="card" id="result">
+  <h2>🎉 نتيجتك:</h2>
+  <div id="scores"></div>
+</div>
+
+<!-- ربط ملف الجافاسكريبت الخارجي -->
+<script src="script.js"></script>
+
+</body>
+</html>

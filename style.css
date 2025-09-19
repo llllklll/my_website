@@ -1,0 +1,117 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 100px 0 40px 0; 
+  background: url('0c34.jpg') no-repeat center center fixed;
+
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #000000;
+  margin: 0px auto 30px auto; /* زودت margin-top لـ 40px */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  max-width: 650px;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+/* الكلام كامل في العنوان */
+h1::after {
+  content: "اعرف أي من قيمنا تبرز فيك أكثر بين : بكرمنا، بطموحنا، بفزعتنا، بجودنا،بأصالتنا";
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+}
+
+.card {
+  background: #fff;
+  width: 80%;
+  max-width: 650px;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 0.5s;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card.active {
+  display: flex;
+}
+
+h2 {
+  color: #006c35;
+  font-size: 22px;
+}
+
+.progress {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.options {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.options button {
+  background: #006c35;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  background: #009e4f;
+}
+
+.result {
+  font-size: 20px;
+  color: #006c35;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 95%;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .options button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
