@@ -105,7 +105,7 @@ h2 {
 /* تحسين الجوال */
 @media (max-width: 700px) {
   body {
-    padding: 60px 0 20px 0; /* يقلل المسافة فوق وتحت */
+    padding: 30px 0 20px 0; /* يقلل المسافة فوق وتحت */
   }
   h1 {
     font-size: 20px;
