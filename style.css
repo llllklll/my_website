@@ -108,30 +108,29 @@ h2 {
 }
 
 /* تحسين الجوال */
+/* تحسين الجوال */
 @media (max-width: 700px) {
   body {
     justify-content: flex-start;
     padding-top: 30px;
+    background-attachment: scroll;
   }
   
   h1 {
-    font-size: 18px;
-    width: 98%;
-    margin-bottom: 155px;
+    font-size: 20px;
+    width: 95%;
+    margin-bottom: 30px;
   }
 
   h1::after {
-    font-size: 16px;
+    font-size: 18px;
+    margin-top: 8px;
   }
 
   .card {
-    width: 95%;
-    max-width: 650px;
-    padding: 20px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 92%;
+    padding: 25px;
+    margin: 0 auto 30px auto;
   }
 
   h2 {
@@ -139,11 +138,37 @@ h2 {
   }
 
   .options button {
-    font-size: 14px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 12px;
   }
 
   .result {
     font-size: 18px;
+  }
+}
+
+/* تحسين إضافي للشاشات الصغيرة جداً */
+@media (max-width: 400px) {
+  body {
+    padding-top: 25px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  h1::after {
+    font-size: 16px;
+  }
+  
+  .card {
+    padding: 20px;
+    width: 95%;
+  }
+  
+  .options button {
+    font-size: 14px;
+    padding: 11px;
   }
 }
