@@ -1,11 +1,16 @@
 body {
   font-family: 'Cairo', sans-serif;
   margin: 0;
-  padding: 100px 0 40px 0; 
+  padding: 0; /* إزالة padding الكبير الذي كان يرفع البطاقة */
   background: url('0c34.jpg') no-repeat center center fixed;
-  
+  background-size: cover;
   box-sizing: border-box;
-  text-align: center; /* يخلي النص بالنص */
+  text-align: center;
+  height: 100vh;           /* كامل ارتفاع الشاشة */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* يضع كل المحتوى عموديًا في المنتصف */
+  align-items: center;     /* يضع كل المحتوى أفقيًا في المنتصف */
 }
 
 h1 {
@@ -41,7 +46,7 @@ h1::after {
   align-items: center;
   text-align: center;
   animation: fadeIn 0.5s;
-  margin: 0 auto; /* يخلي الكارد بالنص */
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -104,18 +109,6 @@ h2 {
 
 /* تحسين الجوال */
 @media (max-width: 700px) {
-
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* كامل ارتفاع الشاشة */
-    display: flex;
-    flex-direction: column; /* لأن عندك h1 + card + محتويات */
-    justify-content: center; /* كل المحتوى في منتصف الشاشة عموديًا */
-    align-items: center;     /* كل المحتوى في منتصف الشاشة أفقيًا */
-    text-align: center;
-  }
-
   h1 {
     font-size: 20px;
     width: 95%;
@@ -129,7 +122,7 @@ h2 {
     width: 95%;
     max-width: 650px;
     padding: 20px;
-    margin: 0; /* يضمن البطاقة في المنتصف */
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
