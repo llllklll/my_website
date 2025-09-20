@@ -28,7 +28,7 @@ h1 {
 h1::after {
   content: "اعرف أي من قيمنا تبرز فيك أكثر بين : بكرمنا، بطموحنا، بفزعتنا، بجودنا،بأصالتنا";
   display: block;
-  margin-top: 7px;
+  margin-top: 10px;
   font-size: 20px;
   font-weight: normal;
   color: #333;
@@ -54,13 +54,13 @@ h1::after {
   display: flex;
 }
 
-h4 {
+h2 {
   color: #006c35;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .progress {
-  font-size: 16px;
+  font-size: 20px;
   color: #000000;
   margin-bottom: 13px;
   font-weight: bold;
@@ -90,7 +90,7 @@ h4 {
 }
 
 .result {
-  font-size: 20px;
+  font-size: 25px;
   color: #006c35;
   font-weight: bold;
   margin: 8px 0;
@@ -119,13 +119,13 @@ h4 {
   }
   
   h1 {
-    font-size: 20px;
+    font-size: 25px;
     width: 95%;
     margin: 90px auto 30px auto;
   }
 
   h1::after {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
   }
 
@@ -135,17 +135,17 @@ h4 {
     margin: 30px auto;
   }
 
-  h4 {
-    font-size: 130px;
+  h2 {
+    font-size: 150px;
   }
 
   .options button {
-    font-size: 15px;
+    font-size: 20px;
     padding: 12px;
   }
 
   .result {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
