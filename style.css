@@ -114,14 +114,14 @@ h2 {
 @media (max-width: 700px) {
   body {
     justify-content: flex-start;
-    padding-top: 80px;
+    padding-top: 100px !important; /* أجبر الجسم ينزل شوي */
     min-height: 120vh;
   }
   
   h1 {
     font-size: 20px;
     width: 95%;
-    margin: 60px auto 30px auto;
+    margin: 80px auto 30px auto !important; /* نزل العنوان زيادة */
   }
 
   h1::after {
@@ -132,7 +132,7 @@ h2 {
   .card {
     width: 92%;
     padding: 25px;
-    margin: 50px auto 0 auto; /* ← زودت المسافة من فوق */
+    margin: 60px auto 0 auto !important; /* نزل الكارد تحت سانتي أو أكثر */
   }
 
   h2 {
