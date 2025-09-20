@@ -54,7 +54,7 @@ h1::after {
   display: flex;
 }
 
-h2 {
+h3 {
   color: #006c35;
   font-size: 22px;
 }
@@ -114,7 +114,7 @@ h2 {
 @media (max-width: 700px) {
   body {
     justify-content: flex-start;
-    padding-top: 80px;
+    padding-top: 100px;
     min-height: 120vh;
   }
   
@@ -126,7 +126,7 @@ h2 {
 
   h1::after {
     font-size: 18px;
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .card {
@@ -135,7 +135,7 @@ h2 {
     margin: 40px auto;
   }
 
-  h2 {
+  h3 {
     font-size: 20px;
   }
 
